@@ -1,63 +1,74 @@
 <!DOCTYPE html>
 <html>
 
-<body>
+<h2>The Registration form</h2>
 
-  <h2>HTML Forms</h2>
+<form action="/action_page.php" autocomplete="on" validate>
+  <fieldset>
 
-  <form action="/action_page.php">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-    <input type="submit" value="Submit">
-  </form>
-
-  <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p><br>
-  <h2>The input Element</h2>
-
-  <form action="/action_page.php">
-    <label for="fname">First name:</label><br>
+    <legend>Personalia:</legend><br>
+    <style>
+  table, th, td {
+  border: 1px solid black;
+}
+</style>
+    <table>
+      <tr>
+        <th>
+      <colgroup>
+        <tbody>
+    <label for="fname"> Name:</label><br>
     <input type="text" id="fname" name="fname"><br><br>
+    <label for="mnumber">Mobile no:</label><br>
+    <input type="number" id="mnumber" name="mnumber" ><br><br>
+    <label for="email" >Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="pword">Password:</label><br>
+    <input type="password" "hidden" id="pword" Email="pword"><br><br>
+        </tbody>
+      </colgroup>
+        </th>
+      </tr>
+    </tabel>
+    <h3>Select your Gender</h3>
+    <input type="radio" id="gender" name="gender" >
+    <label for="gender">Male:</label><br><br>
+    <input type="radio" id="gender" name="gender" >
+    <label for="gender">Female:</label><br><br>
+    <input type="radio" id="gender" name="gender" >
+    <label for="gender">Other:</label><br><br>
+    <label for="addr">Adress:</label><br><br>
+    <textarea name="message" rows="10" cols="30"></textarea><br>
+    <label for="clg">College:</label>
+    <input type="text" id="clg" name="cld" ><br>
+    <h3>Select your department</h3>
+    <input type="radio" id="dept" name="dept" >
+    <label for="dept">CSE:</label><br><br>
+    <input type="radio" id="dept" name="dept" >
+   <label for="dept">ISE:</label><br><br>
+    <input type="radio" id="dept" name="dept" >
+    <label for="dept">ECE:</label><br><br>
+    <input type="radio" id="dept" name="dept" >
+    <label for="dept">EEE:</label><br><br>
+    <input type="radio" id="dept" name="dept" >
+    <label for="dept">Other:</label><br><br>
+    <h3>Select your hobbies</h3>
+    <input type="checkbox" id="hobbies" name="hobbies" >
+    <label for="hobbies">Reading:</label><br><br>
+    <input type="checkbox" id="hobbies" name="hobbies" >
+    <label for="hobbies">Swimming:</label><br><br>
+    <input type="checkbox" id="hobbies" name="hobbies" >
+    <label for="hobbies">Dancing:</label><br><br>
+    <input type="checkbox" id="hobbies" name="hobbies">
+    <label for="hobbies">Other:</label><br><br>
+    <label for="myfile">Option to upload resume:</label>
+    <input type="file" id="myfile" name="myfile"><br><br>
     <input type="submit" value="Submit">
-  </form>
+    <button type="button" onclick="alert("Reset once the details")>Reset</button>
 
-  <h2>Text field</h2>
-  <p>The <strong>input type="text"</strong> defines a one-line text input field:</p>
-
-  <form action="/action_page.php">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname"><br><br>
-    <input type="submit" value="Submit">
-  </form>
-  <h2>Reset Button</h2>
-
-  <p>The <strong>input type="reset"</strong> defines a reset button that resets all form values to their default values:
-  </p>
-
-  <form action="/action_page.php">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-    <input type="submit" value="Submit">
-    <input type="reset">
-  </form>
-  <h1>The input value attribute</h1>
-
-  <p>The value attribute specifies an initial value for an input field:</p>
-
-  <form action="/action_page.php">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-    <input type="submit" value="Submit">
-  </form>
-
+  </fieldset>
+</form>
 
 </body>
-
 </html>
+
